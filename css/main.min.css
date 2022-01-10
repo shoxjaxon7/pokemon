@@ -1,6 +1,5 @@
 @font-face {
-  font-family: "Oswald", sans-serif;
-  src: url();
+  font-family: Oswald, sans-serif;
 }
 html {
   height: 100%;
@@ -8,8 +7,8 @@ html {
   box-sizing: border-box;
 }
 *,
-*::before,
-*::after {
+::after,
+::before {
   box-sizing: border-box;
 }
 a,
@@ -23,13 +22,12 @@ body {
   display: flex;
   flex-direction: column;
   height: 100%;
-  font-family: "Arial", sans-serif;
+  font-family: Arial, sans-serif;
   font-size: 16px;
   line-height: 1.5;
   background: #eba704;
-  font-family: "Oswald";
+  font-family: Oswald;
 }
-
 img {
   max-width: 100%;
   height: auto;
@@ -38,13 +36,11 @@ img {
 #element::-webkit-scrollbar {
   width: 10px;
 }
-
 #element::-webkit-scrollbar-track {
   -webkit-box-align: 5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset;
   background-color: #f9f9fd;
   border-radius: 10px;
 }
-
 #element::-webkit-scrollbar-thumb {
   border-radius: 10px;
   background: linear-gradient(180deg, #00c6fb, #005bea);
@@ -59,7 +55,7 @@ img {
   width: 1px;
 }
 .header {
-  margin: 0px auto;
+  margin: 0 auto;
   padding-top: 50px;
 }
 .header__img {
@@ -73,8 +69,8 @@ img {
   width: 18rem;
   padding: 30px;
   margin-bottom: 1rem;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
-    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0 3px 7px -3px;
   text-align: center;
   border-radius: 40px;
 }
@@ -84,19 +80,15 @@ img {
 }
 .btn:active {
   transition: 0.5s;
-  background-color: #eeeeee;
+  background-color: #eee;
 }
 .card:hover {
   opacity: 0.8;
-  /* transform: rotate(25deg);
-  transition: 1.5s;
-  opacity: 0; */
 }
 .card:active {
   opacity: 0.6;
 }
 .card-body {
-  /* display: flex; */
   justify-content: space-between;
 }
 .last__desc {
@@ -113,7 +105,6 @@ img {
   justify-content: space-between;
   flex-wrap: wrap;
 }
-
 @media only screen and (max-width: 720px) {
   body {
     font-size: 1.8rem;

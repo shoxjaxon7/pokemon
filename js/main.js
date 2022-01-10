@@ -17,6 +17,7 @@ for (let pokemon of pokemons) {
   newImg.setAttribute("src", pokemon.img);
   newdivTitle.classList.add("card-body");
   newDescForWidth.classList.add("card-text");
+  newDescForWidth.innerHTML = '<i class="bi bi-heart-fill"></i>';
   newDivButton.classList.add("last-group");
   newBottonDesc.classList.add("last__desc");
   // ADDED TEXT CONTENT
