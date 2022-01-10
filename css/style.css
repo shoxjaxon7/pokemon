@@ -64,6 +64,9 @@ img {
 }
 .card:hover {
   opacity: 0.8;
+  transform: skew(25deg, 25deg);
+  transition: 1.5s;
+  opacity: 0;
 }
 .card:active {
   opacity: 0.6;
