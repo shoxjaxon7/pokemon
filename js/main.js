@@ -20,6 +20,8 @@ for (let pokemon of pokemons) {
   newDivButton.classList.add("last-group");
   newBottonDesc.classList.add("last__desc");
   // ADDED TEXT CONTENT
+  (newHead.textContent = pokemon.name), "ismi";
+  // newHead.innerHTML = "name";
   newHead.textContent = pokemon.name;
   newDescForWidth.textContent = pokemon.avg_spawns;
   newBottonDesc.textContent = pokemon.candy;
