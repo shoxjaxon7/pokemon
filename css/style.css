@@ -22,6 +22,7 @@ ul {
 body {
   display: flex;
   flex-direction: column;
+  overflow: hidden;
   height: 100%;
   font-family: "Arial", sans-serif;
   font-size: 16px;
